@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 echo
 printf '%.s=' $(seq 1 $(tput cols))

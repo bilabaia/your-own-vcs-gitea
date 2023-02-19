@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+DOW=$(date +%u)
+if [ $DOW -gt 5 ]; then
+	echo "please do not push on weekends!"
+	exit 1
+fi
+
+exit 0
+

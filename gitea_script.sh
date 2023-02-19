@@ -47,8 +47,8 @@ echo OK work directories ready.
 echo getting last gitea version from repository...
 curl -s https://api.github.com/repos/go-gitea/gitea/releases/latest |grep browser_download_url | cut -d '"' -f 4 | grep '\linux-amd64$' | wget -O /tmp/gitea -i -
 
-sudo mv /tmp/gitea /usr/local/bin/gitea
-sudo chmod +x /usr/local/bin/gitea
+mv /tmp/gitea /usr/local/bin/gitea
+chmod +x /usr/local/bin/gitea
 echo OK gitea files are ready.
 
 # this is most basic example of gitea service file; 

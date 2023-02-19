@@ -30,11 +30,11 @@ esac
 done
 
 echo Adding gitea user to the system..
-sudo adduser --system --group --disabled-password --home /opt/git --shell /bin/bash --gecos 'GitTea Version Control' gitea
+adduser --system --group --disabled-password --home /opt/git --shell /bin/bash --gecos 'GitTea Version Control' gitea
 echo OK gitea user ready.
 
 echo Preparing work directories for gitea...
-sudo mkdir -p /var/lib/gitea/{custom,data,indexers,public,log}
+mkdir -p /var/lib/gitea/{custom,data,indexers,public,log}
 sudo chown git: /var/lib/gitea/{data,indexers,log}
 sudo chmod 750 /var/lib/gitea/{data,indexers,log}
 

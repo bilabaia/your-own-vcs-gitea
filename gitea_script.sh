@@ -35,8 +35,8 @@ echo OK gitea user ready.
 
 echo Preparing work directories for gitea...
 mkdir -p /var/lib/gitea/{custom,data,indexers,public,log}
-sudo chown git: /var/lib/gitea/{data,indexers,log}
-sudo chmod 750 /var/lib/gitea/{data,indexers,log}
+chown git: /var/lib/gitea/{data,indexers,log}
+chmod 750 /var/lib/gitea/{data,indexers,log}
 
 sudo mkdir /etc/gitea
 sudo chown root:git /etc/gitea
